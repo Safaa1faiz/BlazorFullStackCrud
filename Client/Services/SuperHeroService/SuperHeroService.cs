@@ -26,7 +26,10 @@ namespace BlazorFullStackCrud.Client.Services.SuperHeroService
 			var response = await result.Content.ReadFromJsonAsync<List<SuperHero>>();
 			Heroes = response;
             _navigationManager.NavigateTo("superheroes");
+
 		}
+
+
 
 	
 
